@@ -1,0 +1,471 @@
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url("https://iquiz.me/gym/sng/6/assets-quiz/fonts/BebasNeueCyrillic.woff2") format("woff2");
+	font-weight: 700;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "TTNorms Medium";
+	src: url("https://iquiz.me/gym/sng/6/assets-quiz/fonts/TTNorms-Medium.otf") format("otf");
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: #090A0A;
+	background-color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.subtitle__inc {
+	font-size: 20px;
+	line-height: 130%;
+	color: #424242;
+	max-width: 574px;
+	margin-bottom: 35px;
+}
+
+.title {
+	width: 100%;
+	max-width: 665px;
+	margin-bottom: 24px;
+	margin-top: 0;
+	font-size: 48px;
+	line-height: 120%;
+	color: #404040;
+}
+
+.subtitle {
+	font-size: 24px;
+	line-height: 140%;
+	color: #434343;
+	margin-bottom: 24px;
+}
+
+.title span {
+	color: #3D9CA8;
+}
+
+.main__title-sm {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 120%;
+	color: #424242;
+	margin-bottom: 24px;
+}
+
+@media (max-width: 430px) {
+	.main__title-sm {
+		width: 88%;
+		margin: 0 auto 16px;
+		font-size: 16px;
+	}
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center left;
+	overflow: hidden;
+	background-color: #F0F0F0;
+}
+
+.mark {
+	position: absolute;
+}
+
+.mark-1 {
+	top: 50px;
+	right: 46%;
+}
+
+.mark-2 {
+	left: 0;
+	bottom: 0;
+}
+
+.mark-3 {
+	right: 48%;
+	bottom: 50px;
+}
+
+.mark-4 {
+	top: -100px;
+	left: -120px;
+}
+
+.mark__image {
+	max-width: 100%;
+}
+
+.main__item-inner {
+	max-width: 840px;
+	margin: 0 0 0 auto;
+	padding-left: 10px;
+	position: relative;
+	z-index: 1;
+}
+
+.main__item {
+	flex: 0 0 55%;
+	max-width: 55%;
+}
+
+.main__item-subtitle {}
+
+.main__bg {
+	background-image: url(https://iquiz.me/gym/sng/6/assets-quiz/images/newPreland/bg-desc.jpg);
+	height: 100vh;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	flex: 0 0 45%;
+	max-width: 45%;
+}
+
+.webp .main__bg {
+	background-image: url(https://iquiz.me/gym/sng/6/assets-quiz/images/newPreland/bg-desc.webp);
+}
+
+.main__bottom {
+	display: flex;
+	align-items: center;
+}
+
+.main-wrap {
+	display: flex;
+	column-gap: 34px;
+	align-items: center;
+}
+
+.quiz__time {
+	display: flex;
+	align-items: center;
+}
+
+.quiz__time-icon {
+	margin-right: 10px;
+}
+
+.quiz__time-text {
+	font-size: 20px;
+	color: #8D8D8D;
+}
+
+.button {
+	display: block;
+	max-width: 100%;
+	padding: 24px 60px;
+	font-size: 18px;
+	border: transparent;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #FFFFFF;
+	background: #3D9CA8;
+	border-radius: 32px;
+	letter-spacing: 0.5px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+}
+
+@media (max-width: 425px) {
+	.button {
+		width: 100%;
+		padding: 24px 40px;
+	}
+}
+
+.button:not(:disabled):hover {
+	background: #124950;
+}
+
+.button:active {
+	background: #36c0e3;
+}
+
+@media (max-width: 1350px) {
+	.mark {
+		display: none;
+	}
+
+	.main__item-inner {
+		margin: 0 10px 0 auto;
+	}
+}
+
+@media (max-width: 1200px) {
+	.title {
+		color: #313131;
+	}
+
+	.main-wrap {
+		flex-direction: column;
+		align-items: start;
+		row-gap: 24px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.main__bg {
+		background-position: 53% 80%;
+	}
+
+	.title {
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-wrap {
+		align-items: center;
+	}
+
+	.subtitle__inc {
+		margin: 0 auto 24px;
+		font-size: 18px;
+	}
+
+	.main {
+		min-height: 100vh;
+		background-position: top -50% center;
+		padding-bottom: 35px;
+		flex-direction: column-reverse;
+		text-align: center;
+	}
+
+	.title {
+		width: 100%;
+		font-size: 38px;
+	}
+
+	.main::after {
+		bottom: 0;
+		right: 0;
+	}
+
+	.timer-text p {
+		font-size: 16px;
+		line-height: 120%;
+	}
+
+	.timer-text__image {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+	}
+
+	.main::before {
+		width: 158px;
+		height: 158px;
+		background-size: cover;
+	}
+
+	.main::after {
+		width: 180px;
+		height: 156px;
+		background-size: cover;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	.main__item-inner {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 100%;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.timer-text p strong {
+		display: inline-block;
+	}
+
+	.timer-text {
+		margin-left: 0;
+	}
+
+	.btn {
+		margin: 0 auto;
+		display: block;
+		order: 2;
+		font-size: 24px;
+	}
+
+	.timer-text {
+		order: 1;
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.timer-text {
+		display: flex;
+		margin-bottom: 24px;
+		text-align: center;
+		justify-content: center;
+		margin-top: 0;
+	}
+
+	.timer-text p {
+		margin: 0;
+		text-align: left;
+		display: inline-block;
+		width: auto;
+	}
+
+	.main__item {
+		flex: 1;
+		max-width: 100%;
+	}
+
+	.main__bg {
+		height: auto;
+		min-height: 50vh;
+		max-height: 100%;
+		background-position: top center;
+		background-size: cover;
+		position: relative;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 576px) {
+	.title {
+		width: 100%;
+		margin-bottom: 16px;
+		font-size: 22px;
+		line-height: 27px;
+	}
+
+	.main__item-inner {
+		padding: 70px 20px;
+	}
+}
+
+@media (max-width: 430px) {
+	.main {
+		padding-bottom: 0;
+	}
+
+	.main__bg {
+		flex: 0;
+		min-height: auto;
+		padding-top: 64%;
+		margin-bottom: 0;
+		background-position: top;
+		background-size: contain;
+		background-image: url(https://iquiz.me/gym/sng/6/assets-quiz/images/newPreland/bg-mobile.jpg);
+	}
+
+	.webp .main__bg {
+		background-size: contain;
+		background-image: url(https://iquiz.me/gym/sng/6/assets-quiz/images/newPreland/bg-mobile.webp);
+	}
+
+	.btn {
+		width: 100%;
+		padding: 20px 40px;
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.subtitle__inc {
+		font-size: 16px;
+	}
+
+	.quiz__time {
+		margin: 0 auto;
+		order: 2;
+	}
+
+	.quiz__time-text {
+		font-size: 16px;
+	}
+
+	.mark {
+		display: block;
+	}
+
+	.mark-1 {
+		width: 70px;
+		right: 5px;
+		top: 36%;
+	}
+
+	.mark-2 {
+		width: 110px;
+	}
+
+	.mark-3 {
+		width: 70px;
+		top: 80%;
+		left: 86%;
+	}
+
+	.mark-4 {
+		top: 30%;
+		width: 110px;
+		left: -10%;
+	}
+}
+
+.descr {
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+	color: #857F83;
+	margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+	.descr {
+		max-width: 400px;
+		margin: 0 auto;
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+}
+
+@media (min-width: 769px) {
+	.descr {
+		max-width: 688px;
+		text-align: left;
+		font-size: 20px;
+		margin-bottom: 42px;
+	}
+}
+
+@media (min-width: 1351px) {
+	.mark-1 {
+		width: 162px;
+		height: 162px;
+	}
+
+	.mark-2 {
+		width: 210px;
+		height: 230px;
+	}
+
+	.mark-3 {
+		width: 152px;
+		height: 152px;
+	}
+}
