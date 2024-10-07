@@ -808,6 +808,15 @@
 
 		</form>
 	</main>
+	<script>
+    document.querySelectorAll('.info-link-to-land').forEach(function(link) {
+        link.addEventListener('click', function(event) {
+            // Убираем предотвращение перехода
+            window.location.href = 'https://korevko.github.io/test_app/'; 
+            console.log('Кнопка нажата, перенаправление на план');
+        });
+    });
+</script>
 	<script src="assets-quiz/js/nouislider/nouislider.js"></script>
 	<script src="assets-quiz/js/rangeInit.js"></script>
 	<script src="assets-quiz/js/quiz.js"></script>
