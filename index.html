@@ -22,18 +22,9 @@
 </head>
 
 <body>
-	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js" onload="window.Telegram.WebApp.expand(); window.Telegram.WebApp.setHeaderColor('#424242'); window.Telegram.WebApp.setBackgroundColor('#424242');"></script>
 </head>
 <body> 
-<script>
-        Telegram.WebApp.ready();
-        Telegram.WebApp.expand();
-        window.Telegram.WebApp.onEvent('viewportChanged', function() {
-            if (!Telegram.WebApp.isExpanded) {
-                Telegram.WebApp.expand();
-            }
-        });
-    </script>
 	<main class="questions">
 		<form>
 
