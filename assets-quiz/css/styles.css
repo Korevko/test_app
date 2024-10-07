@@ -61,6 +61,26 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+/* Убираем стандартное поведение (синее выделение) для label */
+label {
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Убираем выделение на мобильных */
+    user-select: none; /* Отключаем выделение текста */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Плавная анимация */
+}
+
+/* Эффект нажатия (продавливание) */
+label:active {
+    transform: scale(0.95); /* Эффект продавливания */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
+}
+
+/* Сбрасываем стандартный стиль для input[type="radio"] */
+input[type="radio"] {
+    position: absolute;
+    opacity: 0; /* Делаем сам radio-элемент невидимым */
+}
 
 pre {
 	font-family: monospace, monospace;
