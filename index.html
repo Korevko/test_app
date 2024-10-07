@@ -22,7 +22,15 @@
 </head>
 
 <body>
-
+<script>
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+        window.Telegram.WebApp.onEvent('viewportChanged', function() {
+            if (!Telegram.WebApp.isExpanded) {
+                Telegram.WebApp.expand();
+            }
+        });
+    </script>
 	<main class="questions">
 		<form>
 
